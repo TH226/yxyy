@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/iv_recruit"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@mipmap/umeng_socialize_share_pic"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_recruit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="center_horizontal|left"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:text="义工招募义工招募义工招募义工招募义工招募义工招募"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_activity_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="3dp"
+                android:text="时间：2016-08-16"
+                android:textColor="#a000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_activity_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="3dp"
+                android:text="地点：焦作市山阳区"
+                android:textColor="#a000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:id="@+id/id_to_msg_date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="2012-12-12-12:12:12"-->
+        <!--android:background="#bebebe"-->
+        <!--android:textColor="#f5f5f5"-->
+        <!--android:textSize="12sp"-->
+        <!--android:layout_gravity="center" />-->
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:orientation="horizontal">
+        <TextView
+            android:text="njdjfsdkfnddddeedddd"
+            android:id="@+id/id_to_msg_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:gravity="center|left"
+            android:textSize="14sp"
+            android:background="@drawable/chatto_bg_normal" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/iam" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="我" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

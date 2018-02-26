@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00CCFE"
+        android:text="意见反馈"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center|left"
+            android:text="联系方式" />
+
+        <EditText
+            android:id="@+id/et_qq"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="14sp"
+            android:background="@drawable/rectange"
+            android:hint="请输入QQ，电话等我们能联系到您的联系方式" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center|left"
+            android:text="感受建议" />
+
+        <EditText
+            android:id="@+id/et_opinion1"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/rectange"
+            android:gravity="top"
+            android:padding="3dp"
+            android:hint="你好，我是产品经理，欢迎反馈使用本产品的感受和建议" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_clk"
+            android:textSize="18sp"
+            android:text="取消"/>
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@drawable/button_clk"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>

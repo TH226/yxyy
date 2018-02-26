@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_select_photo_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_takephoto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="1dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#3da6ec"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#9e9e9e" />
+
+        <TextView
+            android:id="@+id/btn_selectimage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="1dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textColor="#3da6ec"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_select_photo_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/canclePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="1dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#3da6ec"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

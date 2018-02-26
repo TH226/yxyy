@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/titleblue"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_fri_return_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cxz_common_navi_button_back" />
+
+
+        <TextView
+            android:id="@+id/car_fri_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_fri_return_home"
+            android:text="附近"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/start_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="开始会话"
+            android:textColor="#a000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/car_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_hao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/iv_hao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/gsl" />
+
+            <TextView
+                android:id="@+id/tv_hao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_hao"
+                android:text="小浩"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hao"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_hao"
+                android:text="你好"
+                android:textColor="#a000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="11月10日"
+                android:textColor="#a000" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/rl_hao"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#a4a4a4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_haha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_hao">
+
+            <ImageView
+                android:id="@+id/iv_hao1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/item11" />
+
+            <TextView
+                android:id="@+id/tv_hao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_hao1"
+                android:text="流年"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_new1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hao1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_hao1"
+                android:text="哈哈"
+                android:textColor="#a000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="11月11日"
+                android:textColor="#a000" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/rl_haha"
+            android:background="#a4a4a4" />
+    </RelativeLayout>
+
+    <include layout="@layout/car_friend_bottom"></include>
+</LinearLayout>

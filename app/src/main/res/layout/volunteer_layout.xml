@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/refresh_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#3da6ec"
+            android:src="@mipmap/gzx" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Top_style"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tv_volunteer_recruit"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="义工招募"
+            android:textColor="#a000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <include layout="@layout/bottom_layout" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#3da6ec">
+
+        <ImageButton
+            android:id="@+id/ib_back_front_my"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="#3da6ec"
+            android:gravity="center"
+            android:src="@mipmap/btn_back_n" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="活动详情"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/refresh_recruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#3da6ec"
+            android:src="@mipmap/gzx" />
+
+    </RelativeLayout>
+
+    <com.example.asus.yxyyeapp.View.RefreshListView
+        android:id="@+id/lv_recruit_information1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.asus.yxyyeapp.View.RefreshListView>
+</LinearLayout>
